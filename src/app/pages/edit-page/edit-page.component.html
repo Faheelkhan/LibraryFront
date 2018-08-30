@@ -1,0 +1,48 @@
+<mat-card>
+    <mat-card-header class="paddingBtm">
+        <label class="text-muted infoBtn">Press info</label>
+        <button mat-raised-button class='btnGrid' routerLink="/categories">Edit</button>
+    </mat-card-header>
+
+    <mat-card-content>
+        <div>
+            <label class="labelForChildren">Short Description</label>
+            <mat-form-field appearance="outline" fxFlex="50" style="padding-right: 6px;">
+                <mat-label>Description: </mat-label>
+                <input matInput placeholder="Placeholder">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                <!-- <mat-hint>Hint</mat-hint> -->
+            </mat-form-field>
+        </div>
+        <div>
+            <label class="labelForChildren">Detail Description</label>
+            <mat-form-field appearance="outline" fxFlex="50" style="padding-right: 6px;">
+                <mat-label>Detail Description: </mat-label>
+                <input matInput placeholder="Placeholder">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                <!-- <mat-hint>Hint</mat-hint> -->
+            </mat-form-field>
+        </div>
+
+        <div>
+            <mat-form-field appearance="outline" fxFlex="50" style="padding-right: 6px;">
+                <mat-label>Feature Image: </mat-label>
+                <input matInput placeholder="Placeholder">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                <!-- <mat-hint>Hint</mat-hint> -->
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" fxFlex="50" style="padding-right: 6px;">
+                <mat-label>Multiple Images: </mat-label>
+                <input matInput placeholder="Placeholder">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                <!-- <mat-hint>Hint</mat-hint> -->
+            </mat-form-field>
+        </div>
+
+        <div>
+            <button mat-raised-button class='btnGrid' routerLink="/categories">Save</button>
+        </div>
+    </mat-card-content>
+
+</mat-card>

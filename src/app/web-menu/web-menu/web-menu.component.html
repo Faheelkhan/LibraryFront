@@ -1,0 +1,25 @@
+<div fxLayout="row">
+    <h4>
+        Press
+    </h4>
+    <mat-form-field appearance="outline" class="flotingToRight">
+        <mat-select placeholder="All Sites">
+            <mat-option *ngFor="let food of foods" [value]="food.value">
+                {{food.viewValue}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
+<mat-tab-group>
+    <mat-tab label="Main Menu">
+        <app-web-menu-main-menu></app-web-menu-main-menu>
+    </mat-tab>
+    <mat-tab label="Footer Menu">
+    </mat-tab>
+    <mat-tab label="Left Menu">
+    </mat-tab>
+    <mat-tab label="Right Menu">
+    </mat-tab>
+    <mat-tab label="Category Menu">
+    </mat-tab>
+</mat-tab-group>

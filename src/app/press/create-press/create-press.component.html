@@ -1,0 +1,33 @@
+<mat-card>
+    <mat-card-header class="paddingBtm">
+        <label class="text-muted infoBtn">Press info</label>
+        <button mat-raised-button class='btnGrid' routerLink="/press/pressInfo">Press Info</button>
+    </mat-card-header>
+
+    <mat-card-content>
+        <div>
+            <label class="labelForChildren">Short Description</label>
+            <mat-form-field appearance="outline" fxFlex="50" style="padding-right: 6px;">
+                <mat-label>Description: </mat-label>
+                <input matInput placeholder="Placeholder">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                <!-- <mat-hint>Hint</mat-hint> -->
+            </mat-form-field>
+        </div>
+
+        <div>
+            <label class="labelForChildren">Short Description</label>
+            <mat-form-field appearance="outline" fxFlex="50" style="padding-right: 6px;">
+                <mat-label>Description: </mat-label>
+                <textarea rows="10" matInput placeholder="Category"></textarea>
+                <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+                <!-- <mat-hint>Hint</mat-hint> -->
+            </mat-form-field>
+        </div>
+    </mat-card-content>
+
+    <div>
+        <label class="text-muted infoBtn">Press info</label>
+        <button mat-raised-button class='btnGrid' routerLink="/categories">Edit</button>
+    </div>
+</mat-card>

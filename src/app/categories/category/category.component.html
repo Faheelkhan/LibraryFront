@@ -1,0 +1,80 @@
+<!-- <mat-card fxFlex fxLayout="row" fxLayoutWrap fxLayoutGap="1rem" fxLayoutAlign="center">
+    <mat-form-field fxFlex="30" fxFlex.lt-sm="100">
+        <mat-select placeholder="Favorite food">
+            <mat-option *ngFor="let food of foods" [value]="food.value">
+                {{food.viewValue}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field fxFlex="30" fxFlex.lt-sm="100">
+        <mat-select placeholder="Favorite food">
+            <mat-option *ngFor="let food of foods" [value]="food.value">
+                {{food.viewValue}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field fxFlex="30" fxFlex.lt-sm="100">
+        <mat-select placeholder="Favorite food">
+            <mat-option *ngFor="let food of foods" [value]="food.value">
+                {{food.viewValue}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <mat-form-field fxFlex="30" fxFlex.lt-sm="100">
+        <mat-select placeholder="Favorite food">
+            <mat-option *ngFor="let food of foods" [value]="food.value">
+                {{food.viewValue}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field fxFlex="30" fxFlex.lt-sm="100">
+        <mat-select placeholder="Favorite food">
+            <mat-option *ngFor="let food of foods" [value]="food.value">
+                {{food.viewValue}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field fxFlex="30" fxFlex.lt-sm="100">
+        <mat-select placeholder="Favorite food">
+            <mat-option *ngFor="let food of foods" [value]="food.value">
+                {{food.viewValue}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+</mat-card> -->
+<h4>{{title}}</h4>
+<mat-tab-group>
+    <mat-tab label="Categories">
+        <mat-card fxLayout="row" fxLayoutWrap fxLayoutAlign="space-around center">
+            <mat-accordion fxFlex="30" fxFlex.lt-sm="100" class="accordionBottomPadding" *ngFor="let number of numbers">
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header style="background-color: #058ac3;" class="gradiantPanel">
+                        <mat-panel-title class="panelTiltle">
+                            Self aware panel
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            <!-- Currently I am {{panelOpenState ? 'open' : 'closed'}} -->
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <mat-list role="list">
+                        <mat-list-item role="listitem">Item 1</mat-list-item>
+                        <mat-list-item role="listitem">Item 2</mat-list-item>
+                        <mat-list-item role="listitem">Item 3</mat-list-item>
+                    </mat-list>
+                </mat-expansion-panel>
+            </mat-accordion>
+        </mat-card>
+    </mat-tab>
+    <mat-tab label="Events">
+        <p class="paddingForPara">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolorem repellendus ut illo provident sapiente, corporis ipsam aspernatur laudantium? Impedit tempora adipisci nisi soluta, esse dicta debitis aliquam nihil enim.</p>
+    </mat-tab>
+    <mat-tab label="Deals">
+        <p class="paddingForPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, minima harum temporibus nemo doloremque voluptatem tempore soluta commodi, praesentium repudiandae magnam ut amet deleniti sint dolore vitae dolorem corporis assumenda.</p>
+    </mat-tab>
+    <mat-tab label="Tags">
+        <p class="paddingForPara">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa debitis fugit laboriosam nam illo quod impedit, asperiores, hic obcaecati atque earum neque quos doloribus at nisi iste minima. Non, rerum.</p>
+    </mat-tab>
+</mat-tab-group>
+
+<button mat-raised-button class='btnGrid' routerLink="/categories/editCatrgory">Edit</button>

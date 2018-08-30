@@ -1,0 +1,33 @@
+.accordionBottomPadding {
+    margin-bottom: 28px;
+    // background: linear-gradient(to right, #058ac3, #21bec7);
+}
+
+.gradiantPanel {
+    background-color: #058ac3;
+}
+
+.panelTiltle {
+    color: white;
+}
+
+// .mat-expansion-panel {
+//     background: linear-gradient(to right, #058ac3, #21bec7);
+// }
+.mat-expansion-panel-content ng-trigger ng-trigger-bodyExpansion mat-expanded {
+    background-color: aliceblue;
+}
+
+.mat-expansion-panel-body {
+    background-color: white;
+    padding: 0 24px 16px;
+}
+
+.paddingForPara {
+    padding-top: 30px;
+}
+
+.btnGrid {
+    background: linear-gradient(to right, #058ac3, #21bec7);
+    color: white;
+}

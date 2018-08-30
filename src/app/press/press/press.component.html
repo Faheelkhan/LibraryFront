@@ -1,0 +1,23 @@
+<div fxLayout="row">
+    <h4>
+        Press
+    </h4>
+    <mat-form-field appearance="outline" class="flotingToRight">
+        <mat-select placeholder="All Sites">
+            <mat-option *ngFor="let food of foods" [value]="food.value">
+                {{food.viewValue}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
+<mat-tab-group (selectedTabChange)="onLinkClick($event)">
+    <mat-tab label="All Press">
+        <app-all-press></app-all-press>
+    </mat-tab>
+    <mat-tab label="Draft">
+        <app-draft></app-draft>
+    </mat-tab>
+    <mat-tab label="Creating">
+        <router-outlet></router-outlet>
+    </mat-tab>
+</mat-tab-group>

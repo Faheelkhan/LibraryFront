@@ -1,0 +1,87 @@
+<mat-card>
+    <mat-card-header class="paddingBtm">
+        <label class="text-muted infoBtn">Press info</label>
+        <button mat-raised-button class='btnGrid' routerLink="/press/pressCreate">Press Create</button>
+    </mat-card-header>
+
+    <div>
+        <label class="labelForChildren">For Site: </label>
+        <mat-form-field appearance="outline" class="flotingToRight" fxFlex="40">
+            <mat-select placeholder="All Sites">
+                <mat-option *ngFor="let food of foods" [value]="food.value">
+                    {{food.viewValue}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline" fxFlex="40" style="padding-right: 6px;">
+            <mat-label>Title: </mat-label>
+            <input matInput placeholder="Placeholder">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <!-- <mat-hint>Hint</mat-hint> -->
+        </mat-form-field>
+    </div>
+    <!--
+    <div>
+        <mat-form-field appearance="outline" fxFlex="40" style="padding-right: 6px;">
+            <mat-label>Press Title: </mat-label>
+            <input matInput placeholder="Press Title">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <mat-hint>Hint</mat-hint>
+        </mat-form-field>
+        <mat-form-field appearance="outline" fxFlex="40" style="padding-right: 6px;">
+            <mat-label>Mata Title: </mat-label>
+            <input matInput placeholder="Mata Title">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <mat-hint>Hint</mat-hint>
+        </mat-form-field>
+    </div> -->
+    <!-- <div>
+        <mat-form-field appearance="outline" fxFlex="40" style="padding-right: 6px;">
+            <mat-label>Mata Keyword: </mat-label>
+            <input matInput placeholder="Press Title">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <mat-hint>Hint</mat-hint>
+        </mat-form-field>
+        <mat-form-field appearance="outline" fxFlex="40" style="padding-right: 6px;">
+            <mat-label>Mata Description: </mat-label>
+            <input matInput placeholder="Mata Title">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <mat-hint>Hint</mat-hint>
+        </mat-form-field>
+    </div> -->
+
+    <div>
+        <mat-form-field appearance="outline" fxFlex="40" style="padding-right: 6px;">
+            <mat-label>Feature Image: </mat-label>
+            <input matInput placeholder="Press Title">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <!-- <mat-hint>Hint</mat-hint> -->
+        </mat-form-field>
+        <mat-form-field appearance="outline" fxFlex="40" style="padding-right: 6px;">
+            <mat-label>Link: </mat-label>
+            <input matInput placeholder="Mata Title">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <mat-hint>Please insert only lastName eg: home || about || contact </mat-hint>
+        </mat-form-field>
+    </div>
+
+    <div>
+        <mat-form-field appearance="outline" fxFlex="100" style="padding-right: 6px;">
+            <mat-label>Parent Menu: </mat-label>
+            <input matInput placeholder="Parent Menu">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <!-- <mat-hint>Hint</mat-hint> -->
+        </mat-form-field>
+    </div>
+
+    <div style="padding-top: 12px">
+        <div class="slideTogglePadding">
+            <label class="paddingForLabels slideTogglePadding">Publish: </label>
+            <mat-slide-toggle></mat-slide-toggle>
+        </div>
+    </div>
+
+    <div>
+        <button mat-raised-button class='btnGrid' routerLink="/press/pressCreate">Save</button>
+    </div>
+</mat-card>

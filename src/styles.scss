@@ -1,0 +1,70 @@
+// /* You can add global styles to this file, and also import other style files */
+// @import '~@angular/material/theming';
+@import url('//fonts.googleapis.com/icon?family=Material+Icons');
+// @include mat-core();
+// $primary: mat-palette($mat-indigo,
+// 400,
+// 100,
+// 700);
+// $accent : mat-palette($mat-lime,
+// 500,
+// A200,
+// A400);
+// $warn : mat-palette($mat-red,
+// 500);
+// $config: mat-typography-config();
+// $theme: mat-light-theme($primary,
+// $accent,
+// $warn);
+// @include angular-material-theme($theme);
+// body {
+//     font-family: mat-font-family($config);
+//     font-weight: normal;
+// }
+// h1,
+// h2,
+// h3,
+// h4 {
+//     font-weight: normal;
+// }
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+// Third pirty style files
+// Sidebar Scroll
+@import '~perfect-scrollbar/css/perfect-scrollbar.css';
+// // Data Table
+// @import '~@swimlane/ngx-datatable/release/index.css';
+// @import '~@swimlane/ngx-datatable/release/themes/material.css';
+// @import '~@swimlane/ngx-datatable/release/assets/icons.css';
+// // Rich Text Editor
+// @import '~quill/dist/quill.core.css';
+// @import '~quill/dist/quill.snow.css';
+// // Drag and Drop
+// @import '~dragula/dist/dragula.css';
+// // Calendar
+// @import '~angular-calendar/dist/css/angular-calendar.css';
+// // User tour
+// @import '~hopscotch/dist/css/hopscotch.min.css';
+// Page loader Topbar
+@import 'vendor/pace/pace-theme-min.css';
+// Main Variables File
+@import "assets/styles/scss/variables";
+// Open _themes.scss and remove unnecessary theme files
+@import "assets/styles/scss/themes";
+// Open _main.scss and keep files which are required for your current layout.
+@import "assets/styles/scss/main";
+// Open _views.scss and remove unnecessary view related files
+@import "assets/styles/scss/views";
+.egret-indigo .mat-raised-button.mat-primary,
+.egret-indigo .mat-fab.mat-primary,
+.egret-indigo .mat-mini-fab.mat-primary {
+    background-color: rgb(23, 176, 120);
+}
+
+.headerBgColor {
+    background-color: #14a6c5;
+    color: white;
+}
+
+@import '~@swimlane/ngx-datatable/release/index.css';
+@import '~@swimlane/ngx-datatable/release/themes/material.css';
+@import '~@swimlane/ngx-datatable/release/assets/icons.css';
